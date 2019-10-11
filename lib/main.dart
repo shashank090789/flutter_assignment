@@ -5,7 +5,8 @@ void main() => runApp(MyApp());
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return MaterialApp(
+        home: Scaffold(
       appBar: AppBar(
         title: Text("My App"),
       ),
@@ -18,6 +19,6 @@ class MyApp extends StatelessWidget {
           )
         ],
       ),
-    );
+    ));
   }
 }
